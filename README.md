@@ -1,6 +1,7 @@
 # Personal_Website
 A personal Website that was created as part of the Web course in the Department of Computer Science &amp; Electronic Systems Engineering at DI.PA.E Thessaloniki during the fall semester of the academic year 2020-2021. 
 
+* [Website URL](https://users.iee.ihu.gr/~it134050/site/index.html)
 
 ![Screenshot_1](https://github.com/georgepol01/Personal_Website/assets/115163100/91ba5296-8caa-4ded-a852-ca8bc581ed7e)
 ![Screenshot_7](https://github.com/georgepol01/Personal_Website/assets/115163100/49f09bd8-97bf-46c5-b1ba-5df5dd4c701b)
