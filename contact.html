@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="index.html"><h1><span>G</span>eorge <span>P</span>olizoidis</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="index.html" data-after="Home">Home</a></li>
+                        <li><a href="services.html" data-after="Services">Services</a></li>
+                        <li><a href="projects.html" data-after="Projects">Projects</a></li>
+                        <li><a href="about.html" data-after="About">About</a></li>
+                        <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header-->
+
+
+     <!-- Contact Section-->
+     <section id="contact">
+         <div class="contact container">
+            <div><h1 class="section-title">Contact <span>Form</span></h1></div>
+             <div id="form">
+              <form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="get" required>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name.." required>
+            
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" maxlength="100" name="subject" required placeholder="Write something...max lenght 100 characters" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+
+             <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+             <div class="contact-items">
+                 <div class="contact-item">
+                     <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/phone.png"/></div>
+                     <div class="contact-info">
+                         <h1>Phone</h1>
+                         <h2>+30 6984123456</h2>
+                         <h2>+30 6999654321</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                   <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/email.png"/></div>
+                     <div class="contact-info">
+                         <h1>Email</h1>
+                         <h2>info@gmail.com</h2>
+                         <h2>adcd@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/home-page.png"/></div>
+                     <div class="contact-info">
+                         <h1>Address</h1>
+                         <h2>Thessaloniki, Greece</h2>
+                    </div>
+                </div>
+            </div> 
+        </div>                  
+        </section>
+     <!-- End Contact Section-->
+
+     <!-- Footer-->
+     <section id="footer">
+         <div class="footer container">
+             <div class="brand"><h1><span>G</span>eorge <span>P</span>olizoidis</h1></div>
+             <div class="social-icon">
+                 <div class="social-item">
+                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png"/></a>
+                 </div>
+                 <div class="social-item">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png"/></a>
+                </div> 
+                <div class="social-item">
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png"/></a>
+                </div> 
+            </div>
+            <p>Copyright © 2020. All rights reserved</p>       
+         </div>
+     </section>
+     <!-- End Footer-->
+     <script src="./app.js"></script>
+
+     <script>
+         function validateForm(){
+
+             document.getElementById("form").innerHTML=''
+            
+             var success = document.createElement("h1")
+             success.innerHTML = "Thank you for your submission!"
+             document.getElementById("form").appendChild(success)
+
+             success.style.color="green"
+             success.style.fontSize="40px"
+             success.style.padding="200px 200px"
+
+
+
+         }
+
+     </script>
+    </body>
+</html>
